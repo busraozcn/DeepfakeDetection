@@ -1,0 +1,110 @@
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+/* Heading Now */
+@import url('https://fonts.googleapis.com/css2?family=Heading+Now:wght@700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Sayfanın tamamını kaplaması için */
+}
+
+/* Card */
+.card {
+  width: 400px; /* Kartın genişliği */
+}
+
+/* Card Header */
+.card-header {
+  font-size: 32px; /* Başlık boyutu */
+  font-weight: bold; /* Kalın font */
+  text-align: center;
+}
+
+/* Card Body */
+.card-body {
+  text-align: center;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Elemanları dikey hizalama */
+  align-items: flex-start; /* Elemanları sola hizalama */
+}
+
+/* Label */
+/* Label */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif; /* Yazı tipi Poppins Light */
+  text-align: left; /* Label'ları sola hizala */
+  width: 100%; /* Label'ın genişliği */
+  font-size: 12px; /* Yazı boyutu */
+}
+
+/* Input */
+input[type="email"], input[type="password"] {
+  width: calc(100% - 20px); /* Inputların genişliği (20px, padding ve border için) */
+  height: 30px; /* Inputların yüksekliği */
+  padding: 5px; /* Paddingi küçült */
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif; /* Yazı tipi Poppins Light */
+  margin-bottom: 10px; /* Inputlar arasına boşluk bırak */
+}
+
+
+/* Button */
+button[type="submit"] {
+  width: 30%; /* Butonun genişliği */
+  height: 50px;
+  background-color: #6369d1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px; /* Butonun boyutu */
+  font-weight: bold; /* Kalın font */
+}
+
+button[type="submit"]:hover {
+  background-color: #6369d1;
+}
+
+/* Paragraph */
+p {
+  margin-top: 20px;
+  font-family: 'DM Sans', sans-serif; /* Yazı tipi DM Sans */
+  font-size: 15px; /* Yazı boyutu */
+  text-align: center; /* Paragrafı ortala */
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}

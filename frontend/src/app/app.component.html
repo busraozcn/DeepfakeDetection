@@ -1,0 +1,18 @@
+<div class="sidebar">
+  <div class="brand">
+    <a routerLink="/home-page">Don'tFakeMe</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a (click)="navigateToDetect()" class="sidebarDetect-button">Detect</a></li>
+      <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login">Log in</a></li>
+      <li *ngIf="!authService.isLoggedIn()"><a routerLink="/register">Sign up</a></li>
+      <li *ngIf="authService.isLoggedIn()"><a routerLink="/my-account">My Account</a></li>
+      <li *ngIf="authService.isLoggedIn()"><a (click)="logout()">Log out</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

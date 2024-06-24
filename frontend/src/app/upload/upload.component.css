@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title {
+    font-family: "DM Sans", sans-serif; /* DM Sans fontunu kullan */
+    font-size: 32.7px;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-family: "DM Sans", sans-serif; /* DM Sans fontunu kullan */
+    font-size: 23.3px;
+    margin-top: 60px;
+}
+
+.upload-container {
+    position: relative;
+}
+
+.upload-button {
+    background-color: #6369d1;
+    border: none;
+    border-radius: 90px;
+    padding: 15px 120px; /* Buton boyutunu artır */
+    cursor: pointer;
+    margin-top: 50px;
+    color: #ffffff; /* Yazı rengini değiştir */
+    font-size: 20px; /* Yazı boyutunu ayarla */
+    display: inline-block; /* Yazının buton içinde düzgün bir şekilde görünmesini sağlar */
+}
+
+.detect-button {
+    background-color: #545564;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 30px; /* Buton boyutunu artır */
+    margin-top: 60px; /* Detect butonunu aşağı kaydır */
+    font-family: "DM Sans", sans-serif; /* DM Sans fontunu kullan */
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block; /* Yazının buton içinde düzgün bir şekilde görünmesini sağlar */
+}
+
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+}

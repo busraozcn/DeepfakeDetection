@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+.my-account-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'DM Sans', sans-serif; /* Set DM Sans as the font */
+}
+
+.my-account-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 500; /* Use a slightly bolder font for titles */
+}
+
+.user-actions {
+  margin-top: 20px;
+}
+
+.logout-button {
+  background-color: #6369d1;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #545564;
+}
+
+.detection-history {
+  margin-top: 40px;
+}
+
+.detection-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.custom-progress-bar {
+  margin-top: 20px; /* Increased margin for more space between bars */
+  width: 200px;
+  height: 30px; /* Progress bar height */
+  border-radius: 10px;
+  position: relative;
+  background-color: #000; /* Black color for the progress bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-progress-bar .progress-label {
+  position: absolute;
+  color: #D9D9D9; /* Set the text color to #D9D9D9 */
+  font-weight: 400; /* Lighter font weight */
+  font-size: 14px;
+  z-index: 1;
+}
+
+mat-progress-bar {
+  width: 100%;
+  height: 30px; /* Progress bar height */
+  border-radius: 10px;
+  background-color: #9b59b6; /* Purple color for the progress bar fill */
+}
+
+mat-progress-bar .mat-progress-bar-fill::after {
+  border-radius: 10px;
+  background-color: #9b59b6 !important; /* Purple color for the progress bar fill */
+}
+
+.image-and-progress-container {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-and-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  width: 50%; /* Adjust width to ensure the progress bars have enough space */
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Increased margin for more space between bars */
+  position: relative;
+}
+
+.image-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.image-table th,
+.image-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.image-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.image-table td {
+  text-align: center;
+}
+
+.image-table .progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.image-table img {
+  display: block;
+  margin: auto;
+}

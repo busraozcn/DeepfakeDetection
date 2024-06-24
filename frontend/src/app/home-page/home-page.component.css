@@ -1,0 +1,40 @@
+/* Container */
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Başlık */
+  .title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  
+  /* Alt başlık */
+  .subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Resim container */
+  .image-container {
+    margin-top: 50px;
+  }
+  
+  /* Ana resim */
+  .homepage-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* İçerik */
+  .content {
+    margin-top: 50px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

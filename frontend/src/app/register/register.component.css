@@ -1,0 +1,84 @@
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+/* Heading Now */
+@import url('https://fonts.googleapis.com/css2?family=Heading+Now:wght@700&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center; /* Butonu ortalamak için */
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: 700; /* Bold */
+  font-family: 'Heading Now', sans-serif;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+
+/* Form */
+.form {
+  margin-top: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px; /* Poppins Light */
+  text-align: left; /* Label'ları sola hizala */
+}
+
+/* Input Field */
+.input-field {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.btn-signup {
+  width: 30%; /* Butonun genişliği */
+  height: 50px;
+  background-color: #6369d1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px; /* Butonun boyutu */
+  font-weight: bold; /* Kalın font */
+}
+
+.btn-signup:hover {
+  background-color: #4a54c4; /* Hover'da farklı renk */
+}

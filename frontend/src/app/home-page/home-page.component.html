@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .carousel-item img {
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .title {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .homepage-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #6369d1;
+            border-color: #6369d1;
+        }
+
+        .btn-primary:hover {
+            background-color: #5056b3;
+            border-color: #5056b3;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<main role="main">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://www.hiig.de/wp-content/uploads/2022/01/Website_banner_blog_deepfake_800x450-%E2%80%93-6.png" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Prevent Deepfake Danger</h1>
+                        <p></p>
+                        <p><button class="btn btn-lg btn-primary" (click)="goToRegister()">Sign up today</button></p>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    <div class="container marketing">
+        <div class="section-title">Why is Deepfake Detection Necessary?</div>
+        <div class="section-content">
+            Deepfake technology poses a significant threat in the digital world. Fake videos and images can lead to misinformation, damage individuals' reputations, and create social unrest. Therefore, deepfake detection plays a critical role in distinguishing real content from fake ones. It is crucial for maintaining the reliability of information sources and protecting individuals' digital rights.
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+
+                <h2>Who Are We?</h2>
+                <p> We are a group of technology enthusiasts dedicated to preventing the dangers posed by deepfake technology. Our goal is to ensure digital security by stopping the spread of fake content. With our innovative approaches and advanced algorithms, we lead the field in deepfake detection.</p>
+
+            </div>
+            <div class="col-lg-4">
+              
+                <h2>Our Mission</h2>
+                <p>Our mission is to prevent the misuse of deepfake technology and to raise awareness about its dangers. We aim to stop the spread of fake content by developing robust detection tools. We work to provide reliable information to all sectors of society and enhance digital security.</p>
+   
+            </div>
+            <div class="col-lg-4">
+              
+                <h2>Our Vision</h2>
+                <p> Our vision is to minimize the effects of deepfake technology, making the digital world a safer and more honest place. We aim to prevent fake content with advanced technologies and innovative solutions. By embracing the principles of reliability and transparency, we strive to maximize digital security.</p>
+             
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Manipulating People During Wartime</h2>
+                <p class="lead">Deepfake technology can be used during wartime to create fake videos or audio recordings, manipulating people's beliefs and emotions. Detecting deepfakes can help prevent such manipulation and protect the integrity of information.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://i.ytimg.com/vi/sbFHhpYU15w/maxresdefault.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Dirty Political Agendas</h2>
+                <p class="lead">Politicians may use deepfake technology to create misleading content, advancing their political agendas through unethical means. Detecting deepfakes can help uncover these deceptive practices and maintain the integrity of political discourse.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="https://i1.wp.com/media.globalnews.ca/videostatic/news/f71v2uukc7-io5b5jylpy/DeepfakeThumber.jpg?w=1200&quality=70&strip=all" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Deceiving the Public <span class="text-muted"></span></h2>
+                <p class="lead">Deepfakes can be used to spread false information, deceiving the public by making it difficult to distinguish between real and fake content. Effective deepfake detection can help expose these falsehoods and ensure that the public receives accurate information.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="https://static01.nyt.com/images/2024/04/04/multimedia/04xp-katevideo-fhbz/04xp-katevideo-fhbz-jumbo.jpg?quality=75&auto=webp" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

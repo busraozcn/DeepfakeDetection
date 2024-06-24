@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="detection-result">
+    <h2>Your Detection Result</h2>
+    <div class="image-and-progress-container">
+      <div class="image-container">
+        <img
+          *ngIf="imageList.length > 0"
+          [src]="imageList[0].url"
+          alt="Image"
+          width="400"
+        />
+      </div>
+      <div class="right-pane">
+        <div class="progress-bar-container">
+          <div class="custom-progress-bar">
+            <span class="progress-label">AI {{ progressBar1Value }}%</span>
+            <mat-progress-bar
+              color="primary"
+              mode="determinate"
+              [value]="progressBar1Value"
+            ></mat-progress-bar>
+          </div>
+          <div class="custom-progress-bar">
+            <span class="progress-label">REAL {{ progressBar2Value }}%</span>
+            <mat-progress-bar
+              color="primary"
+              mode="determinate"
+              [value]="progressBar2Value"
+            ></mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-pane">
+      <table id="imageTable" class="image-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Uploaded By</th>
+            <th>Upload Time</th>
+            <th>Accuracy Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let image of imageList">
+            <td>
+              <img [src]="image.url" alt="Uploaded Image" width="100" />
+            </td>
+            <td style="vertical-align: middle; text-align: center">
+              {{ image.uploadedBy }}
+            </td>
+            <td style="vertical-align: middle; text-align: center">
+              {{ image.uploadTime | date:'medium' }}
+            </td>
+            <td>
+              <div class="custom-progress-bar">
+                <span class="progress-label">AI {{ image.aiPercentage }}%</span>
+                <mat-progress-bar
+                  color="primary"
+                  mode="determinate"
+                  [value]="image.aiPercentage"
+                ></mat-progress-bar>
+              </div>
+              <div class="custom-progress-bar">
+                <span class="progress-label">REAL {{ image.realPercentage }}%</span>
+                <mat-progress-bar
+                  color="primary"
+                  mode="determinate"
+                  [value]="image.realPercentage"
+                ></mat-progress-bar>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

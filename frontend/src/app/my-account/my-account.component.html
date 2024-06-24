@@ -1,0 +1,30 @@
+<div class="my-account-container">
+  <h2 class="my-account-title">My Account</h2>
+  <div class="user-actions">
+      <button class="logout-button" (click)="logOut()">Log out</button>
+  </div>
+  <div class="detection-history">
+    <h2>Detection History</h2>
+    <div class="detection-item" *ngFor="let image of imageList">
+      <img [src]="image.url" alt="Detection Image" width="200" />
+      <div class="progress-bar-container">
+        <div class="progress-bar custom-progress-bar">
+          <span class="progress-label">AI: {{ image.progressBar1Value }}%</span>
+          <mat-progress-bar
+            class="progress-bar-fill"
+            mode="determinate"
+            [value]="image.progressBar1Value"
+          ></mat-progress-bar>
+        </div>
+        <div class="progress-bar custom-progress-bar">
+          <span class="progress-label">REAL: {{ image.progressBar2Value }}%</span>
+          <mat-progress-bar
+            class="progress-bar-fill"
+            mode="determinate"
+            [value]="image.progressBar2Value"
+          ></mat-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
